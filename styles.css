@@ -1,0 +1,372 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: "Quattrocento", serif;
+}
+:root {
+ --h1-size: 3.6vw ;
+ --h2-size: 3vw;
+ --h3-size: 2.4vw;
+ --p1-size: 1vw;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-family: 'Times New Roman', Times, serif;
+}
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 3;
+}
+#nav {
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+   
+}
+.nav-left {
+    padding: 1px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.nav-logo {
+    height: 35px;
+    padding-left: 22px;
+}.nav-logo-2 {
+    height: 60px;
+}
+.nav-logo-3 {
+    height: 40px;
+}
+
+.nav-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    padding-top: 50px;
+}
+.first-ad {
+    height: 595px;
+    padding: 1rem;
+    padding-right: 0;
+    padding-bottom: 0%;
+    background-image: url(tyler-lastovich-hM08wZJBlK4-unsplash.jpg);
+    animation: animation 53s ease infinite ;
+    background-size: 400% 400%;
+    animation-timing-function:linear;
+
+}
+@keyframes animation {
+    0% {
+     background-position: 0%;
+    }
+    25% {
+     background-position: 25%;
+    }
+    50% {
+     background-position: 50%;
+    }
+    75% {
+     background-position: 75%;
+    }
+    100% {
+     background-position: 100%;
+    }
+}
+.grid-ad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 3rem;
+    padding: 3rem 0rem 3rem 3rem;
+}
+.right-grid {
+    display: flex;
+    flex-direction: inherit;
+    right: 0%;
+    position: relative;
+}
+.left-grid {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 50%;
+}
+.top-img {
+ height: 550px;
+ position: absolute;
+ right: 0%;
+ animation-name: opacity;
+ animation-duration: 1.8s;
+ animation-timing-function: linear;
+}
+
+.top-1{
+    height: 550px;
+    right: 0%;
+    top: 0;
+    animation-name: scroll-left;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    z-index: 2;
+}
+.animation-text-1 {
+    position: relative;
+    top: 12%;
+    left: 26%;
+    z-index: 2;
+    animation-name: scroll-left;
+    animation-timing-function:linear;
+    animation-duration: 1s;
+}
+.animation-text-2 {
+    position: relative;
+    top: 20%;
+    z-index: 2;
+    left: 22%;
+    animation-name: scroll-left;
+    animation-timing-function:linear;
+    animation-duration: 1.4s;
+}
+.animation-text-3 {
+    position: relative;
+    top: 0%;
+    margin-top: 0%;
+    right: 15%;
+    z-index: 1;
+    animation-name: scroll-left;
+    animation-timing-function:linear;
+    animation-duration:1.6s;
+}
+.animation-text-4 {
+    position: relative;
+    top: 0%;
+    margin-top: 3%;
+    right: 5%;
+    z-index: 1;
+    animation-name: scroll-left;
+    animation-timing-function:linear;
+    animation-duration: 1.4s;
+}
+.animation-text-5 {
+    position: relative;
+    top: 0%;
+    margin-top: 8%;
+    right: 11%;
+    z-index: 1;
+    animation-name: scroll-left;
+    animation-timing-function:linear;
+    animation-duration: 1.5s;
+}
+.top-2 {
+    padding-right: 2rem;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform:  translateX(+90px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX( -0px);
+        opacity: 1;
+    }
+}
+@keyframes opacity {
+    0% { transform: translateX(+15px);
+        opacity: 0.5;
+    }
+    100% { transform:  translateX(0px);
+        opacity: 1;
+    }
+    
+}
+.ad-quotes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    width: 400px
+}
+.album {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+.albums {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    padding-left: 0;
+    margin-left: 0%;
+    padding-top: 10px;
+}
+.album-box {
+    max-height: 131px;
+    max-width: 400px !important;
+}
+.album-img {
+    height: 100px;
+    padding: 2%;
+    margin: 2px;
+    transition: height 0.2s ease-in-out;
+}
+.album-img:hover {
+    height: 130px;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+.right {
+   padding: 1em;
+}
+.nav-links {
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    text-align: end;
+    justify-content: space-between;
+}
+.nav-link {
+    margin: 0.5em;
+    font-family: "Quattrocento", serif;
+    font-weight: 700;
+    font-size: x-large;
+    transition: color 0.3s ease-in-out ;
+}
+.nav-link:hover {
+    color: gray;
+}
+.black-button {
+    height: 40px;
+    width: 100px;
+    background: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: background 0.3s ease-out;
+}
+.black-button:hover {
+    background: gray;
+    border: 1px solid gray;
+}
+.white-button {
+    height: 40px;
+    width: 290px;
+    background:  white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    transition: background 0.3s ease-out;
+}
+.white-button:hover {
+    background: gray;
+    border: 1.5px solid gray;
+    color: white;
+}
+.transparent-button {
+    height: 40px;
+    width: 220px;
+    background: transparent;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    transition: background 0.3s ease-out;
+}
+.transparent-button:hover {
+    background: gray;
+    border: 1.5px solid gray;
+    color: white;
+}
+.ad-quotes > h2 , h5 {
+    
+}
+#shoot {
+    height: 545px;
+    padding: 2em;
+}
+#shoot.scrolled {
+animation-name: scroll ;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+   
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(-150px);
+        opacity: 40%;
+    }
+      100%{
+        transform: translateY(0px);
+      }
+    }
+
+    .reputation {
+        display: flex;
+        flex-direction:row;
+        padding: 2em;
+        padding-top: 4rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .explain {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+        padding: 1rem;
+    }
+    .black-area {
+        width: 730px;
+        height: 350px;
+        background-color: black;
+        border-radius: 40px;
+        margin: 2em;
+        color: white;
+        padding: 2em;
+        padding-top: 0;
+    }
+    .brand-logos {
+        padding: 2em 4em 1em 0em;
+    }
+    .brand-logos > ul {
+        padding-left: 0%;
+    }
+    .normal-words {
+        color: white;
+    }
+    a {
+        color: white;
+        transition: 0.6s linear;
+    }
+    a:hover {
+        color: grey;
+    }
