@@ -15,13 +15,13 @@ body {
 
 h1 {
     font-size: var(--h1-size);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Quattrocento", serif;
 }
 header {
     position: fixed;
     top: 0%;
     width: 100%;
-    height: 70px;
+    height: 68px;
     background-color: white;
     z-index: 3;
 }
@@ -61,7 +61,7 @@ main {
     padding-top: 50px;
 }
 .first-ad {
-    height: 595px;
+    height: 598px;
     padding: 1rem;
     padding-right: 0;
     padding-bottom: 0%;
@@ -116,13 +116,16 @@ main {
 }
 
 .top-1{
-    height: 550px;
+    height: 598px;
+    position: absolute;
     right: 0%;
-    top: 0;
+    top: 9%;
+    opacity: 0.9;
     animation-name: scroll-left;
     animation-duration: 1s;
     animation-timing-function:linear;
     z-index: 2;
+    
 }
 .animation-text-1 {
     position: relative;
@@ -137,7 +140,7 @@ main {
     position: relative;
     top: 20%;
     z-index: 2;
-    left: 22%;
+    left: 20%;
     animation-name: scroll-left;
     animation-timing-function:linear;
     animation-duration: 1.4s;
@@ -156,7 +159,7 @@ main {
     position: relative;
     top: 0%;
     margin-top: 3%;
-    right: 5%;
+    right: 0%;
     z-index: 1;
     animation-name: scroll-left;
     animation-timing-function:linear;
@@ -166,7 +169,7 @@ main {
     position: relative;
     top: 0%;
     margin-top: 8%;
-    right: 11%;
+    right: 16%;
     z-index: 1;
     animation-name: scroll-left;
     animation-timing-function:linear;
@@ -182,13 +185,13 @@ main {
         opacity: 0.5;
     }
     100% {
-        transform: translateX( -0px);
+        transform: translateX( 0px);
         opacity: 1;
     }
 }
 @keyframes opacity {
     0% { transform: translateX(+15px);
-        opacity: 0.5;
+        opacity: 0.4;
     }
     100% { transform:  translateX(0px);
         opacity: 1;
@@ -391,12 +394,13 @@ animation-timing-function: ease-in-out;
         text-align: center;
         color: white;
         padding: 2em;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s linear;
+        border: 1px solid black;
     }
     .grid-box:hover {
         background-color: white;
         color: black;
-        border: 2px solid black;
+        border: 1px solid black;
     }
     
 
@@ -412,4 +416,116 @@ animation-timing-function: ease-in-out;
     .grid-box > p {
         padding-top: 2em;
         padding-bottom: 1em;
+    }
+    .grey-grid {
+        background-color: grey;
+        height: 700px;
+        color: white;
+        padding: 1em;
+    }
+    .reputation-3{
+        padding: 7em;
+        padding-top: 4em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 3rem;
+    }
+
+    .grid-box-2 {
+        height: 400px;
+        
+    }
+    .video-box {
+        width: 100%;
+        height: 220px;
+        top: 0;
+       
+        background-size: cover;
+        display: flex;
+    }
+    .opacity-img { 
+        width: 100%;
+        height: 100%;
+        transition: 0.3s linear;
+        color: transparent;
+        top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .opacity-img:hover {
+        background-color: grey;
+        opacity: 0.7;
+        color: white;
+    }
+    .button-div {
+        width: 100%;
+        height: 100%;
+        transition: 0.3s linear;   
+        top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .grid-imgg {
+        max-height: 240px !important;
+        background-size: cover;
+    }
+    .fixed-logo {
+        height: 14px;
+        top: 703px;
+        left: 8px;
+        position: fixed;
+    }
+    .fixed-logo-2 {
+        height: 70px;
+        top: 660px;
+        right: 5px;
+        position: fixed;
+    }
+  
+    .footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        font-size: small;
+    }
+    .icons {
+        font-size: xx-large;
+        padding: 4px;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-ul > li {
+        padding: 1px;
+    }
+    .footer-ul {
+       justify-content: flex-start;
+       text-align: start;
+    }
+    .select-info {
+        padding: 1em 12em 2em 12em;
+    }
+    form {
+        align-items: center;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+    input {
+        margin: 1em;
+        text-align: center;
+    }
+    .select-div {
+        padding-top: 2em;
     }
