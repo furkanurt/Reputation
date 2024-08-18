@@ -545,6 +545,7 @@ animation-timing-function: ease-in-out;
 
         body {
             text-align: center; 
+            justify-content: center;
             width: 100%;
         }
     
@@ -682,11 +683,11 @@ animation-timing-function: ease-in-out;
         }
     
         .album-img {
-            height: auto;
-            width: 100%;
+            height: 70px;
             padding: 0;
             margin: 0;
         }
+        
     
         .black-button, .white-button, .transparent-button {
             width: 40%;
