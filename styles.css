@@ -197,6 +197,7 @@ main {
         opacity: 1;
     }
     
+    
 }
 .ad-quotes{
     display: flex;
@@ -258,6 +259,10 @@ li {
 }
 .nav-link:hover {
     color: gray;
+}
+.black-link {
+    text-decoration: none;
+    color: black;
 }
 .black-button {
     height: 40px;
@@ -533,23 +538,160 @@ animation-timing-function: ease-in-out;
     }
 
     @media (max-width: 670px) {
-        .reputation {
-            flex-direction: column;
-            justify-content: center;
+        .grid-ad {
             overflow: hidden;
+            padding: 2rem 1rem 2rem 1rem;
         }
 
-        .first-ad , .top-1{
+        body {
+            text-align: center; 
+            width: 100%;
+        }
+    
+        header {
+            height: 60px; 
+        }
+    
+        #nav {
+            
+            height: auto;
+            padding: 10px; 
+        }
+    
+        .nav-left, .right {
+            width: 100%;
+        }
+    
+        .nav-logo {
+            height: 30px; 
+        }
+    
+        .right {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0; 
+        }
+    
+        .nav-link {
+            font-size: medium; 
+            margin: 0.2em; 
+        }
+    
+        .first-ad {
             height: 1000px;
             top: 0;
+            padding: 1em;
+            background-size: cover;
+        }
+        .top-2 , .top-1{
+            display: none;
+        }
+    
+        .ad-quotes {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    
+        .reputation, .reputation-2, .reputation-3 {
+            flex-direction: column;
+            padding: 2em 1em; 
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .black-area {
+            width: 90%;
+            height: auto;
+            margin: 1em 0;
+        }
+    
+        .grid-box {
+            height: auto;
+            padding: 2em;
+            padding-top: 7em;
+            margin-left: 2em;
+            margin-right: 2em;
         }
 
-        .black-area {
-            width: 600px;
-            height: 500px;
+        h1 {
+            display: flex;
+            align-items: center;
+            font-size: x-large;
         }
-        .albums {
+    
+         .grid-logo {
+            height: auto;
+            max-height: 50px;
+        }
+    
+        .grey-grid {
+            height: auto;
+            padding: 1em 0;
+        }
+    
+        .grid-box-2 {
+            height: auto;
+        }
+    
+        .video-box {
+            height: 180px; 
+        }
+    
+        .opacity-img {
+            height: 180px;
+        }
+    
+        .footer {
+            padding: 2em;
+            font-size: smaller;
+        }
+    
+        .footer-links {
             flex-direction: column;
         }
+    
+        .select-info {
+            padding: 1em 2em;
+        }
+    
+        .fixed-logo {
+            top:800px
+        } 
+        .fixed-logo-2{
+            top: 780px;
+        }
+    
+        form, input {
+            width: 100%; 
+            padding: 0.5em;
+            margin: 0.5em 0;
+        }
+
+        #shoot {
+            height: 330px;
+        }
+    
+        .album-box {
+            height: auto;
+            width: 380px;
+        }
+        .album {
+            height: 70px;
+        }
+    
+        .album-img {
+            height: auto;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .black-button, .white-button, .transparent-button {
+            width: 40%;
+            margin: 0.5em 0;
+        }
     }
+    
     
