@@ -545,6 +545,7 @@ animation-timing-function: ease-in-out;
 
         body {
             text-align: center; 
+            justify-content: center;
             width: 100%;
         }
     
